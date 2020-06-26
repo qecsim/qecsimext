@@ -39,8 +39,8 @@ class ThreeQubitCode(StabilizerCode):
         return '3-qubit'
 
 
-@cli_description('3-qubit (e.g. plugin error model)')
-class ThreeQubitErrorModel(ErrorModel):
+@cli_description('3-qubit bit-flip (e.g. plugin error model)')
+class ThreeQubitBitFlipErrorModel(ErrorModel):
     """TODO"""
 
     def probability_distribution(self, probability):
@@ -60,11 +60,11 @@ class ThreeQubitErrorModel(ErrorModel):
     @property
     def label(self):
         """See :meth:`qecsim.model.ErrorModel.label`"""
-        return '3-qubit'
+        return '3-qubit bit-flip'
 
 
-@cli_description('3-qubit (e.g. plugin decoder)')
-class ThreeQubitDecoder(Decoder):
+@cli_description('3-qubit lookup (e.g. plugin decoder)')
+class ThreeQubitLookupDecoder(Decoder):
     """TODO"""
 
     def decode(self, code, syndrome, **kwargs):
@@ -76,4 +76,4 @@ class ThreeQubitDecoder(Decoder):
     @property
     def label(self):
         """See :meth:`qecsim.model.Decoder.label`"""
-        return '3-qubit'
+        return '3-qubit lookup'
