@@ -1,7 +1,5 @@
-qecsimext - TODO
-================
-
-TODO
+qecsimext - qecsim extension example
+====================================
 
 Contents
 ========
@@ -10,6 +8,7 @@ Contents
    :maxdepth: 2
 
    overview
+   links
    api
 
 
