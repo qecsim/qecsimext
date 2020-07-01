@@ -1,4 +1,4 @@
-r"""
+"""
 **qecsimext** is an example Python 3 package that extends `qecsim`_ with additional components.
 
 See the README at `qecsimext`_ for details.

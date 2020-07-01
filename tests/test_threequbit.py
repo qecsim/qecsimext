@@ -1,4 +1,6 @@
-"""TODO"""
+"""
+This module contains tests of the qecsim extension examples defined in :mod:`qecsimext.threequbit`.
+"""
 import math
 
 import pytest
@@ -11,7 +13,7 @@ from qecsimext.threequbit import ThreeQubitCode, ThreeQubitBitFlipErrorModel, Th
     0.1, 0.2, 0.3,
 ])
 def test_threequbit_error_rate_reduction(p):
-    """TODO"""
+    """Test that the 3-qubit code with bit-flip noise and minimum-weight decoding reduces the error rate as expected."""
     # calculate expected logical error rate
     # 3 ways to fail with 2 bit-flips and 1 way to fail with 3 bit-flips
     expected_logical_p = 3 * (1 - p) * p ** 2 + p ** 3

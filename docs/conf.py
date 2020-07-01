@@ -14,7 +14,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.mathjax',
-    # 'sphinx.ext.viewcode', # adds links to Python source code
+    'sphinx.ext.viewcode', # adds links to Python source code
     # 'sphinx.ext.intersphinx', # adds links to other sphinx docs
     'sphinx_rtd_theme',  # read the docs theme
 ]
@@ -32,3 +32,6 @@ html_theme_options = {
     # 'titles_only': False,
 }
 
+# -- Options for autodoc --------------------------------------------------
+
+autodoc_member_order = 'bysource'

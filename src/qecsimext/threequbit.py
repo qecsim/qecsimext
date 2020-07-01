@@ -1,4 +1,6 @@
-"""TODO"""
+"""
+This module contains qecsim extension examples for new code, error model and decoder components.
+"""
 import functools
 
 import numpy as np
@@ -8,7 +10,29 @@ from qecsim.model import StabilizerCode, ErrorModel, Decoder, cli_description
 
 @cli_description('3-qubit (e.g. plugin code)')
 class ThreeQubitCode(StabilizerCode):
-    """TODO"""
+    """Implements 3-qubit bit-flip code.
+
+    This code can correct any single bit-flip error but it fails to correct any single phase-flip error.
+
+    Notes:
+
+    * This class extends :class:`qecsim.model.StabilizerCode`, implementing all the abstract properties / methods.
+
+    * This code is integrated into the command-line interface by the following entry in ``setup.cfg``:
+
+    .. code-block:: text
+
+        [options.entry_points]
+        qecsim.cli.run.codes =
+            ext_3qubit = qecsimext.threequbit:ThreeQubitCode
+
+    * A one-line description for command-line interface help messages is provided by the class decorator
+      :func:`qecsim.model.cli_description`.
+
+    * In order to demonstrate how to implement a new code in general, we implement all the abstract properties / methods
+      of :class:`qecsim.model.StabilizerCode`. However, a more concise implementation is possible by extending
+      :class:`qecsim.models.basic.BasicCode`, for an example see :class:`qecsim.models.basic.FiveQubitCode`.
+    """
 
     @property
     @functools.lru_cache()
@@ -41,7 +65,29 @@ class ThreeQubitCode(StabilizerCode):
 
 @cli_description('3-qubit bit-flip (e.g. plugin error model)')
 class ThreeQubitBitFlipErrorModel(ErrorModel):
-    """TODO"""
+    """Implements 3-qubit bit-flip error model.
+
+    This error model applies a bit-flip with the given error probability to any of the qubits of the 3-qubit code.
+
+    Notes:
+
+    * This class extends :class:`qecsim.model.ErrorModel`, implementing all the abstract properties / methods.
+
+    * This code is integrated into the command-line interface by the following entry in ``setup.cfg``:
+
+    .. code-block:: text
+
+        [options.entry_points]
+        qecsim.cli.run.error_models =
+            ext_3qubit.bit_flip = qecsimext.threequbit:ThreeQubitBitFlipErrorModel
+
+    * A one-line description for command-line interface help messages is provided by the class decorator
+      :func:`qecsim.model.cli_description`.
+
+    * In order to demonstrate how to implement a new error model in general, we implement all the abstract properties /
+      methods of :class:`qecsim.model.ErrorModel`. However, qecsim includes a generic bit-flip error model that is
+      compatible with all codes, see :class:`qecsim.models.generic.BitFlipErrorModel`.
+    """
 
     def probability_distribution(self, probability):
         """See :meth:`qecsim.model.ErrorModel.probability_distribution`"""
@@ -65,7 +111,30 @@ class ThreeQubitBitFlipErrorModel(ErrorModel):
 
 @cli_description('3-qubit lookup (e.g. plugin decoder)')
 class ThreeQubitLookupDecoder(Decoder):
-    """TODO"""
+    """Implements 3-qubit lookup decoder.
+
+    This decoder uses a lookup table to determine the most probable error configuration on the 3-qubit code for the
+    given syndrome.
+
+    Notes:
+
+    * This class extends :class:`qecsim.model.Decoder`, implementing all the abstract properties / methods.
+
+    * This code is integrated into the command-line interface by the following entry in ``setup.cfg``:
+
+    .. code-block:: text
+
+        [options.entry_points]
+        qecsim.cli.run.decoders =
+            ext_3qubit.lookup = qecsimext.threequbit:ThreeQubitLookupDecoder
+
+    * A one-line description for command-line interface help messages is provided by the class decorator
+      :func:`qecsim.model.cli_description`.
+
+    * In order to demonstrate how to implement a new decoder in general, we implement all the abstract properties /
+      methods of :class:`qecsim.model.Decoder`. However, qecsim includes a generic decoder that iteratively searches for
+      a minimum-weight recovery operator for any *small* code, see :class:`qecsim.models.generic.NaiveDecoder`.
+    """
 
     def decode(self, code, syndrome, **kwargs):
         """See :meth:`qecsim.model.Decoder.decode`"""
