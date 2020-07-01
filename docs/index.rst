@@ -5,11 +5,10 @@ Contents
 ========
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   overview
-   links
-   api
+    overview
+    api
 
 
 Indices
