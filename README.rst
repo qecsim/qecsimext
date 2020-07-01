@@ -3,7 +3,7 @@ qecsimext
 
 **qecsimext** is an example Python 3 package that extends `qecsim`_ with additional components.
 
-.. _qecsim: https://bitbucket.org/qecsim/qecsim
+.. _qecsim: https://bitbucket.org/qecsim/qecsim/
 
 qecsim can be extended with additional codes, error models and decoders that integrate into the command-line interface.
 qecsimext includes very basic examples of such components to provide a starting point for developing more sophisticated
@@ -127,8 +127,8 @@ For example, distributables can be built as follows:
 Links
 -----
 
-* Source code: https://bitbucket.org/qecsim/qecsimext
-* qecsim source code: https://bitbucket.org/qecsim/qecsim
+* Source code: https://bitbucket.org/qecsim/qecsimext/
+* qecsim source code: https://bitbucket.org/qecsim/qecsim/
 * qecsim documentation: http://davidtuckett.com/qit/qecsim/
 * Contact: qecsim@gmail.com
 
