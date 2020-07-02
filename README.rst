@@ -16,15 +16,15 @@ Installation
 Since qecsimext is intended as an example of how to develop extensions for qecsim, we will download the repository and
 install qecsimext in editable mode in a virtual environment.
 
-* Download the repository: `qecsimext-repo-1.0a.zip`_
+* Download the repository: `qecsimext-repo-0.1b1.zip`_
 
-.. _qecsimext-repo-1.0a.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-1.0a.zip
+.. _qecsimext-repo-1.0a.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b1.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-1.0a.zip                     # extract qecsimext repo
+    $ unzip qecsimext-repo-0.1b1.zip                     # extract qecsimext repo
     $ cd qecsimext
     $ python3 --version                                 # qecsimext requires Python 3.5+
     Python 3.7.7
@@ -66,7 +66,7 @@ New components
 New components can be implemented and integrated into the command-line interface as described below. See also the
 `qecsim documentation`_.
 
-.. _qecsim documentation: http://davidtuckett.com/qit/qecsim/
+.. _qecsim documentation: https://davidtuckett.com/qit/qecsim/
 
 Implementation
 ~~~~~~~~~~~~~~
@@ -129,7 +129,7 @@ Links
 
 * Source code: https://bitbucket.org/qecsim/qecsimext/
 * qecsim source code: https://bitbucket.org/qecsim/qecsim/
-* qecsim documentation: http://davidtuckett.com/qit/qecsim/
+* qecsim documentation: https://davidtuckett.com/qit/qecsim/
 * Contact: qecsim@gmail.com
 
 ----
