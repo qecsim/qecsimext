@@ -18,13 +18,13 @@ install qecsimext in editable mode in a virtual environment.
 
 * Download the repository: `qecsimext-repo-0.1b1.zip`_
 
-.. _qecsimext-repo-1.0a.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b1.zip
+.. _qecsimext-repo-0.1b1.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b1.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b1.zip                     # extract qecsimext repo
+    $ unzip qecsimext-repo-0.1b1.zip                    # extract qecsimext repo
     $ cd qecsimext
     $ python3 --version                                 # qecsimext requires Python 3.5+
     Python 3.7.7
@@ -121,7 +121,7 @@ For example, distributables can be built as follows:
     (myvenv) $ tox -ebuild                              # build qecsimext distributables
     ...
     (myvenv) $ ls ./dist/                               # list qecsimext distributables
-    qecsimext-1.0a1-py3-none-any.whl	qecsimext-1.0a1.tar.gz
+    qecsimext-0.1b1-py3-none-any.whl    qecsimext-0.1b1.tar.gz
 
 
 Links
