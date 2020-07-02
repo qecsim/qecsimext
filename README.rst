@@ -84,8 +84,8 @@ New codes, error models or decoders are integrated into the command-line interfa
 are under ``qecsim.cli.run_ftp.*`` keys). The format of entries is ``<short_name> = <module_path>:<class_name>``. See
 ``./setup.cfg`` for examples.
 
-One-line descriptions for command-line interface help messages can be provided by decorating implementation classes with
-``qecsim.model.cli_description``. See ``./src/qecsimext/threequbit.py`` for examples.
+Optionally, one-line descriptions for command-line interface help messages can be provided by decorating implementation
+classes with ``qecsim.model.cli_description``. See ``./src/qecsimext/threequbit.py`` for examples.
 
 Notes
 ~~~~~
