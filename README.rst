@@ -48,6 +48,7 @@ install qecsimext in editable mode in a virtual environment.
 
     $ source ./myvenv/bin/activate              # activate virtual environment
     (myvenv) $ pytest                           # run tests
+    ...
     ==== 3 passed in 1.40s =====
 
 * Run simulation example:
