@@ -9,6 +9,7 @@ Contents
 
     overview
     api
+    license
 
 
 Indices
