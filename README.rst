@@ -24,37 +24,37 @@ install qecsimext in editable mode in a virtual environment.
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b1.zip                    # extract qecsimext repo
+    $ unzip qecsimext-repo-0.1b1.zip            # extract qecsimext repo
     $ cd qecsimext
-    $ python3 --version                                 # qecsimext requires Python 3.5+
+    $ python3 --version                         # qecsimext requires Python 3.5+
     Python 3.7.7
-    $ python3 -m venv myvenv                            # create virtual environment
-    $ source ./myvenv/bin/activate                      # activate virtual environment
-    (myvenv) $ pip install --upgrade pip setuptools     # upgrade pip and setuptools
+    $ python3 -m venv myvenv                    # create virtual environment
+    $ source ./myvenv/bin/activate              # activate virtual environment
+    (myvenv) $ pip install -U pip setuptools    # upgrade pip and setuptools
     ...
     Successfully installed pip-20.1.1 setuptools-47.3.1
     (myvenv) $ pip install deps/qecsim-1.0b1-py3-none-any.whl  # TODO: remove when qecsim on PyPI
     ...
     Successfully installed ... qecsim-1.0b1 ...
-    (myvenv) $ pip install -e .[dev]                    # install qecsimext
+    (myvenv) $ pip install -e .[dev]            # install qecsimext with dev tools
     ...
     Successfully installed ... qecsimext ...
-    (myvenv) $ deactivate                               # deactivate virtual environment
+    (myvenv) $ deactivate                       # deactivate virtual environment
     $
 
 * Test installation:
 
 .. code-block:: text
 
-    $ source ./myvenv/bin/activate                      # activate virtual environment
-    (myvenv) $ pytest                                   # run tests
+    $ source ./myvenv/bin/activate              # activate virtual environment
+    (myvenv) $ pytest                           # run tests
     ==== 3 passed in 1.40s =====
 
 * Run simulation example:
 
 .. code-block:: text
 
-    $ source ./myvenv/bin/activate                      # activate virtual environment
+    $ source ./myvenv/bin/activate              # activate virtual environment
     (myvenv) $ qecsim run -r100 "ext_3qubit" "ext_3qubit.bit_flip" "ext_3qubit.lookup" 0.3
     ...
     [{"code": "3-qubit", "decoder": "3-qubit lookup", "error_model": "3-qubit bit-flip", "error_probability": 0.3, "logical_failure_rate": 0.22, ...}]
@@ -95,8 +95,8 @@ Notes
 
 .. code-block:: text
 
-    $ source ./myvenv/bin/activate                      # activate virtual environment
-    (myvenv) $ pip install -U -e .[dev]                 # upgrade qecsimext
+    $ source ./myvenv/bin/activate              # activate virtual environment
+    (myvenv) $ pip install -U -e .[dev]         # upgrade qecsimext
     ...
     Successfully installed qecsimext
 
@@ -117,10 +117,10 @@ For example, distributables can be built as follows:
 
 .. code-block:: text
 
-    $ source ./myvenv/bin/activate                      # activate virtual environment
-    (myvenv) $ tox -ebuild                              # build qecsimext distributables
+    $ source ./myvenv/bin/activate              # activate virtual environment
+    (myvenv) $ tox -ebuild                      # build qecsimext distributables
     ...
-    (myvenv) $ ls ./dist/                               # list qecsimext distributables
+    (myvenv) $ ls ./dist/                       # list qecsimext distributables
     qecsimext-0.1b1-py3-none-any.whl    qecsimext-0.1b1.tar.gz
 
 
