@@ -30,7 +30,7 @@ install qecsimext in editable mode in a virtual environment.
     Python 3.7.7
     $ python3 -m venv venv                  # create virtual environment
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
-    (venv) $ pip install -U pip setuptools  # upgrade pip and setuptools
+    (venv) $ pip install -U setuptools pip  # install / upgrade setuptools and pip
     ...
     Successfully installed pip-20.1.1 setuptools-47.3.1
     (venv) $ pip install deps/qecsim-1.0b1-py3-none-any.whl # TODO: remove when qecsim on PyPI
