@@ -5,7 +5,7 @@ qecsimext
 
 .. _qecsim: https://bitbucket.org/qecsim/qecsim/
 
-The qecsim package is a quantum error correction simulator that can be extended with new codes, error models and
+The qecsim package is a quantum error correction simulator, which can be extended with new codes, error models and
 decoders that integrate into its command-line interface. This qecsimext package includes very basic examples of such
 components to provide a starting point for developing more sophisticated components.
 
