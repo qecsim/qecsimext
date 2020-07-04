@@ -24,7 +24,7 @@ install qecsimext in editable mode in a virtual environment.
 
 .. code-block:: text
 
-    $ tar -xf qecsimext-repo-0.1b1.zip      # extract qecsimext repository
+    $ unzip qecsimext-repo-0.1b1.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b1.zip)
     $ cd qecsimext
     $ python3 --version                     # qecsimext requires Python 3.5+
     Python 3.7.7
