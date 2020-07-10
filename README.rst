@@ -22,7 +22,7 @@ in a virtual environment.
 
 * Download the repository: `qecsimext-repo-0.1b2.zip`_
 
-.. _qecsimext-repo-0.1b2.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b2s.zip
+.. _qecsimext-repo-0.1b2.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b2.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
