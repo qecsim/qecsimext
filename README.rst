@@ -20,26 +20,26 @@ Since qecsimext is intended as an example of how to develop extensions for
 qecsim, we will download the repository and install qecsimext in editable mode
 in a virtual environment.
 
-* Download the repository: `qecsimext-repo-0.1b2.zip`_
+* Download the repository: `qecsimext-repo-0.1b3.zip`_
 
-.. _qecsimext-repo-0.1b2.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b2.zip
+.. _qecsimext-repo-0.1b3.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b3.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b2.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b2.zip)
+    $ unzip qecsimext-repo-0.1b3.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b3.zip)
     $ cd qecsimext
     $ python3 --version                     # qecsimext requires Python 3.5+
-    Python 3.7.7
+    Python 3.7.8
     $ python3 -m venv venv                  # create virtual environment
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
     (venv) $ pip install -U setuptools pip  # install / upgrade setuptools and pip
     ...
     Successfully installed pip-20.1.1 setuptools-47.3.1
-    (venv) $ pip install deps/qecsim-1.0b2-py3-none-any.whl # TODO: remove when qecsim on PyPI
+    (venv) $ pip install deps/qecsim-1.0b3-py3-none-any.whl # TODO: remove when qecsim on PyPI
     ...
-    Successfully installed ... qecsim-1.0b2 ...
+    Successfully installed ... qecsim-1.0b3 ...
     (venv) $ pip install -e .[dev]          # install qecsimext with dev tools
     ...
     Successfully installed ... qecsimext ...
@@ -123,9 +123,9 @@ Notes
 Tools
 _____
 
-Tasks for running tests with coverage, generating documentation and building
-source and binary distributables can be executed using tox_. See ``./tox.ini``
-for more details.
+Tasks for running tests with coverage, checking style, generating documentation
+and building source and binary distributables can be executed using tox_. See
+``./tox.ini`` for more details.
 
 .. _tox: https://tox.readthedocs.io/
 
@@ -137,7 +137,7 @@ For example, distributables can be built as follows:
     (venv) $ tox -ebuild                    # build qecsimext distributables
     ...
     (venv) $ ls ./dist/                     # list qecsimext distributables
-    qecsimext-0.1b2-py3-none-any.whl    qecsimext-0.1b2.tar.gz
+    qecsimext-0.1b3-py3-none-any.whl    qecsimext-0.1b3.tar.gz
 
 
 Links
