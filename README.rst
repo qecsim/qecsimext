@@ -12,6 +12,7 @@ command-line interface. This qecsimext package includes very basic examples of
 such components to provide a starting point for developing more sophisticated
 components.
 
+|
 
 Installation
 ------------
@@ -47,7 +48,6 @@ in a virtual environment.
     $
 
 
-
 * Test installation:
 
 .. code-block:: text
@@ -66,6 +66,7 @@ in a virtual environment.
     ...
     [{"code": "3-qubit", "decoder": "3-qubit lookup", "error_model": "3-qubit bit-flip", "error_probability": 0.3, "logical_failure_rate": 0.22, ...}]
 
+|
 
 New components
 --------------
@@ -75,6 +76,8 @@ interface as described below. See also the `qecsim documentation`_.
 
 .. _qecsim documentation: https://davidtuckett.com/qit/qecsim/
 
+|
+
 Implementation
 ~~~~~~~~~~~~~~
 
@@ -83,6 +86,8 @@ extend ``qecsim.model.StabilizerCode``, ``qecsim.model.ErrorModel`` or
 ``qecsim.model.Decoder``, respectively. (Fault-tolerant decoders extend
 ``qecsim.model.DecoderFTP``). See ``./src/qecsimext/threequbit.py`` for
 examples.
+
+|
 
 CLI integration
 ~~~~~~~~~~~~~~~
@@ -99,6 +104,8 @@ Optionally, one-line descriptions for command-line interface help messages can
 be provided by decorating implementation classes with
 ``qecsim.model.cli_description``. See ``./src/qecsimext/threequbit.py`` for
 examples.
+
+|
 
 Notes
 ~~~~~
@@ -119,6 +126,7 @@ Notes
   However, if you intend to put the components in the public domain then it
   would be good practice to use a unique repository and root package name.
 
+|
 
 Tools
 _____
@@ -139,6 +147,17 @@ For example, distributables can be built as follows:
     (venv) $ ls ./dist/                     # list qecsimext distributables
     qecsimext-0.1b3-py3-none-any.whl    qecsimext-0.1b3.tar.gz
 
+|
+
+License / Citing
+----------------
+
+qecsimext is released under the TODO; see `<LICENSE>`__.
+
+If you use qecsim in your research, please see the `qecsim documentation`_ for
+citing details.
+
+|
 
 Links
 -----
