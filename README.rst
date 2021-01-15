@@ -21,15 +21,15 @@ Since qecsimext is intended as an example of how to develop extensions for
 qecsim, we will download the repository and install qecsimext in editable mode
 in a virtual environment.
 
-* Download the repository: `qecsimext-repo-0.1b3.zip`_
+* Download the repository: `qecsimext-repo-0.1b4.zip`_
 
-.. _qecsimext-repo-0.1b3.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b3.zip
+.. _qecsimext-repo-0.1b4.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b4.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b3.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b3.zip)
+    $ unzip qecsimext-repo-0.1b4.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b4.zip)
     $ cd qecsimext
     $ python3 --version                     # qecsimext requires Python 3.5+
     Python 3.7.8
@@ -55,7 +55,7 @@ in a virtual environment.
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
     (venv) $ pytest                         # run tests
     ...
-    ==== 3 passed in 1.36s =====
+    ==== 3 passed in 1.34s =====
 
 * Run simulation example via console script:
 
@@ -154,7 +154,7 @@ For example, distributables can be built as follows:
     (venv) $ tox -ebuild                    # build qecsimext distributables
     ...
     (venv) $ ls ./dist/                     # list qecsimext distributables
-    qecsimext-0.1b3-py3-none-any.whl    qecsimext-0.1b3.tar.gz
+    qecsimext-0.1b4-py3-none-any.whl    qecsimext-0.1b4.tar.gz
 
 |
 
