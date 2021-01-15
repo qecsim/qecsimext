@@ -37,10 +37,10 @@ in a virtual environment.
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
     (venv) $ pip install -U setuptools pip  # install / upgrade setuptools and pip
     ...
-    Successfully installed pip-20.1.1 setuptools-47.3.1
-    (venv) $ pip install deps/qecsim-1.0b3-py3-none-any.whl # TODO: remove when qecsim on PyPI
+    Successfully installed pip-20.3.3 setuptools-51.1.2
+    (venv) $ pip install deps/qecsim-1.0b5-py3-none-any.whl # TODO: remove when qecsim on PyPI
     ...
-    Successfully installed ... qecsim-1.0b3 ...
+    Successfully installed ... qecsim-1.0b5 ...
     (venv) $ pip install -e .[dev]          # install qecsimext with dev tools
     ...
     Successfully installed ... qecsimext ...
@@ -55,16 +55,25 @@ in a virtual environment.
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
     (venv) $ pytest                         # run tests
     ...
-    ==== 3 passed in 1.40s =====
+    ==== 3 passed in 1.36s =====
 
-* Run simulation example:
+* Run simulation example via console script:
 
 .. code-block:: text
 
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
     (venv) $ qecsim run -r100 "ext_3qubit" "ext_3qubit.bit_flip" "ext_3qubit.lookup" 0.3
     ...
-    [{"code": "3-qubit", "decoder": "3-qubit lookup", "error_model": "3-qubit bit-flip", "error_probability": 0.3, "logical_failure_rate": 0.22, ...}]
+    [{"code": "3-qubit", "decoder": "3-qubit lookup", "error_model": "3-qubit bit-flip", "error_probability": 0.3, "logical_failure_rate": 0.22, ..., "wall_time": 0.043655599000000045}]
+
+* Run simulation example via module script with Python optimize flag:
+
+.. code-block:: text
+
+    $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
+    (venv) $ python3 -O -m qecsim run -r100 "ext_3qubit" "ext_3qubit.bit_flip" "ext_3qubit.lookup" 0.3
+    ...
+    [{"code": "3-qubit", "decoder": "3-qubit lookup", "error_model": "3-qubit bit-flip", "error_probability": 0.3, "logical_failure_rate": 0.22, ..., "wall_time": 0.03045584499999965}]
 
 |
 
