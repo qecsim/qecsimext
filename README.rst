@@ -93,7 +93,7 @@ Implementation
 New codes, error models or decoders are implemented by writing classes that
 extend ``qecsim.model.StabilizerCode``, ``qecsim.model.ErrorModel`` or
 ``qecsim.model.Decoder``, respectively. (Fault-tolerant decoders extend
-``qecsim.model.DecoderFTP``). See ``./src/qecsimext/threequbit.py`` for
+``qecsim.model.DecoderFTP``). See `<./src/qecsimext/threequbit.py>`__ for
 examples.
 
 |
@@ -103,15 +103,15 @@ CLI integration
 
 New codes, error models or decoders are integrated into the command-line
 interface via entries in the ``[options.entry-points]`` section of
-``./setup.cfg`` under the keys ``qecsim.cli.run.codes``,
+`<./setup.cfg>`__ under the keys ``qecsim.cli.run.codes``,
 ``qecsim.cli.run.error_models`` or ``qecsim.cli.run.decoders``, respectively.
 (Fault-tolerant compatible components are under ``qecsim.cli.run_ftp.*`` keys).
 The format of entries is ``<short_name> = <module_path>:<class_name>``. See
-``./setup.cfg`` for examples.
+`<./setup.cfg>`__ for examples.
 
 Optionally, one-line descriptions for command-line interface help messages can
 be provided by decorating implementation classes with
-``qecsim.model.cli_description``. See ``./src/qecsimext/threequbit.py`` for
+``qecsim.model.cli_description``. See `<./src/qecsimext/threequbit.py>`__ for
 examples.
 
 |
@@ -121,7 +121,7 @@ Notes
 
 * Since we installed qecsimext in editable mode there is no need to upgrade the
   installation after source code changes. However, after modifying
-  ``setup.cfg``, the qecsimext installation must be upgraded:
+  `<./setup.cfg>`__, the qecsimext installation must be upgraded:
 
 .. code-block:: text
 
@@ -142,7 +142,7 @@ _____
 
 Tasks for running tests with coverage, checking style, generating documentation
 and building source and binary distributables can be executed using tox_. See
-``./tox.ini`` for more details.
+`<./tox.ini>`__ for more details.
 
 .. _tox: https://tox.readthedocs.io/
 
