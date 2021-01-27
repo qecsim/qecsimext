@@ -21,15 +21,15 @@ Since qecsimext is intended as an example of how to develop extensions for
 qecsim, we will download the repository and install qecsimext in editable mode
 in a virtual environment.
 
-* Download the repository: `qecsimext-repo-0.1b4.zip`_
+* Download the repository: `qecsimext-repo-0.1b5.zip`_
 
-.. _qecsimext-repo-0.1b4.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b4.zip
+.. _qecsimext-repo-0.1b5.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b5.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b4.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b4.zip)
+    $ unzip qecsimext-repo-0.1b5.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b5.zip)
     $ cd qecsimext
     $ python3 --version                     # qecsimext requires Python 3.5+
     Python 3.7.8
@@ -37,10 +37,10 @@ in a virtual environment.
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
     (venv) $ pip install -U setuptools pip  # install / upgrade setuptools and pip
     ...
-    Successfully installed pip-20.3.3 setuptools-51.1.2
-    (venv) $ pip install deps/qecsim-1.0b5-py3-none-any.whl # TODO: remove when qecsim on PyPI
+    Successfully installed pip-21.0 setuptools-52.0.0
+    (venv) $ pip install deps/qecsim-1.0b6-py3-none-any.whl # TODO: remove when qecsim on PyPI
     ...
-    Successfully installed ... qecsim-1.0b5 ...
+    Successfully installed ... qecsim-1.0b6 ...
     (venv) $ pip install -e .[dev]          # install qecsimext with dev tools
     ...
     Successfully installed ... qecsimext ...
@@ -154,7 +154,7 @@ For example, distributables can be built as follows:
     (venv) $ tox -ebuild                    # build qecsimext distributables
     ...
     (venv) $ ls ./dist/                     # list qecsimext distributables
-    qecsimext-0.1b4-py3-none-any.whl    qecsimext-0.1b4.tar.gz
+    qecsimext-0.1b5-py3-none-any.whl    qecsimext-0.1b5.tar.gz
 
 |
 
