@@ -161,7 +161,7 @@ For example, distributables can be built as follows:
 License / Citing
 ----------------
 
-qecsimext is released under the TODO; see `<LICENSE>`__.
+qecsimext is released under the BSD 3-Clause license; see `<LICENSE>`__.
 
 If you use qecsim in your research, please see the `qecsim documentation`_ for
 citing details.
@@ -178,4 +178,4 @@ Links
 
 ----
 
-Copyright 2016, David Tuckett.
+Copyright 2016, David K. Tuckett.

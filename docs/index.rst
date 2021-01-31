@@ -10,6 +10,7 @@ Contents
     overview
     api
     license
+    citing
 
 
 Indices
