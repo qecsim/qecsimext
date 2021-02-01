@@ -20,9 +20,10 @@ Installation
 Since qecsimext is intended as an example of how to develop extensions for
 qecsim, we will download the repository and install qecsimext in editable mode
 in a virtual environment.
-(If you already have a Bitbucket account you may choose to `fork`_ the qecsimext
-repository instead of downloading it.)
+(Alternatively, you may choose to `clone`_ or `fork`_ the qecsimext repository
+instead of downloading it.)
 
+.. _clone: https://support.atlassian.com/bitbucket-cloud/docs/clone-a-repository/
 .. _fork: https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/
 
 * Download the repository: `qecsimext-repo-0.1b6.zip`_
@@ -41,7 +42,7 @@ repository instead of downloading it.)
     $ source venv/bin/activate              # activate venv (Windows: venv\Scripts\activate)
     (venv) $ pip install -U setuptools pip  # install / upgrade setuptools and pip
     ...
-    Successfully installed pip-21.0 setuptools-52.0.0
+    Successfully installed pip-21.0.1 setuptools-52.0.0
     (venv) $ pip install -e .[dev]          # install qecsimext with dev tools
     ...
     Successfully installed ... qecsimext ...
