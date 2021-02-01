@@ -4,7 +4,7 @@
 0.1b7
 ~~~~~
 
-Untagged
+Tagged 2021-02-01
 
 - docs: Note installation via cloning.
 - docs: Add change log.
