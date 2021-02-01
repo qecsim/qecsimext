@@ -26,15 +26,15 @@ instead of downloading it.)
 .. _clone: https://support.atlassian.com/bitbucket-cloud/docs/clone-a-repository/
 .. _fork: https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/
 
-* Download the repository: `qecsimext-repo-0.1b6.zip`_
+* Download the repository: `qecsimext-repo-0.1b7.zip`_
 
-.. _qecsimext-repo-0.1b6.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b6.zip
+.. _qecsimext-repo-0.1b7.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b7.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b6.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b6.zip)
+    $ unzip qecsimext-repo-0.1b7.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b7.zip)
     $ cd qecsimext
     $ python3 --version                     # qecsimext requires Python 3.5+
     Python 3.7.8
@@ -156,7 +156,7 @@ For example, distributables can be built as follows:
     (venv) $ tox -ebuild                    # build qecsimext distributables
     ...
     (venv) $ ls ./dist/                     # list qecsimext distributables
-    qecsimext-0.1b6-py3-none-any.whl    qecsimext-0.1b6.tar.gz
+    qecsimext-0.1b7-py3-none-any.whl    qecsimext-0.1b7.tar.gz
 
 |
 
