@@ -4,7 +4,7 @@ qecsimext
 **qecsimext** is an example Python 3 package that extends `qecsim`_ with
 additional components.
 
-.. _qecsim: https://bitbucket.org/qecsim/qecsim/
+.. _qecsim: https://github.com/qecsim/qecsim
 
 The qecsim package is a quantum error correction simulator, which can be
 extended with new codes, error models and decoders that integrate into its
@@ -22,19 +22,19 @@ in a virtual environment.
 (Alternatively, you may choose to `clone`_ or `fork`_ the qecsimext repository
 instead of downloading it.)
 
-.. _clone: https://support.atlassian.com/bitbucket-cloud/docs/clone-a-repository/
-.. _fork: https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/
+.. _clone: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+.. _fork: https://docs.github.com/en/github/getting-started-with-github/fork-a-repo
 
-* Download the repository: `qecsimext-repo-0.1b8.zip`_
+* Download the repository: `qecsimext-0.1b8.zip`_
 
-.. _qecsimext-repo-0.1b8.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b8.zip
+.. _qecsimext-0.1b8.zip: https://github.com/qecsim/qecsimext/archive/0.1b8.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b8.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b8.zip)
-    $ cd qecsimext
+    $ unzip qecsimext-0.1b8.zip             # extract repo (Windows: tar -xf qecsimext-0.1b8.zip)
+    $ cd qecsimext-0.1b8
     $ python3 --version                     # qecsimext requires Python 3.5+
     Python 3.7.8
     $ python3 -m venv venv                  # create virtual environment
@@ -165,8 +165,8 @@ citing details.
 Links
 -----
 
-* Source code: https://bitbucket.org/qecsim/qecsimext/
-* qecsim source code: https://bitbucket.org/qecsim/qecsim/
+* Source code: https://github.com/qecsim/qecsimext
+* qecsim source code: https://github.com/qecsim/qecsim
 * qecsim documentation: https://davidtuckett.com/qit/qecsim/
 * Contact: qecsim@gmail.com
 

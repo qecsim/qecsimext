@@ -3,8 +3,8 @@
 
 See the README at `qecsimext`_ for details.
 
-.. _qecsim: https://bitbucket.org/qecsim/qecsim/
-.. _qecsimext: https://bitbucket.org/qecsim/qecsimext/
+.. _qecsim: https://github.com/qecsim/qecsim
+.. _qecsimext: https://github.com/qecsim/qecsimext
 """
 
 __version__ = '0.1b8'
