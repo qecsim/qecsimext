@@ -4,7 +4,7 @@ qecsimext
 **qecsimext** is an example Python 3 package that extends `qecsim`_ with
 additional components.
 
-.. _qecsim: https://bitbucket.org/qecsim/qecsim/
+.. _qecsim: https://github.com/qecsim/qecsim
 
 The qecsim package is a quantum error correction simulator, which can be
 extended with new codes, error models and decoders that integrate into its
@@ -12,7 +12,6 @@ command-line interface. This qecsimext package includes very basic examples of
 such components to provide a starting point for developing more sophisticated
 components.
 
-|
 
 Installation
 ------------
@@ -23,19 +22,19 @@ in a virtual environment.
 (Alternatively, you may choose to `clone`_ or `fork`_ the qecsimext repository
 instead of downloading it.)
 
-.. _clone: https://support.atlassian.com/bitbucket-cloud/docs/clone-a-repository/
-.. _fork: https://support.atlassian.com/bitbucket-cloud/docs/fork-a-repository/
+.. _clone: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+.. _fork: https://docs.github.com/en/github/getting-started-with-github/fork-a-repo
 
-* Download the repository: `qecsimext-repo-0.1b7.zip`_
+* Download the repository: `qecsimext-0.1b8.zip`_
 
-.. _qecsimext-repo-0.1b7.zip: https://bitbucket.org/qecsim/qecsimext/downloads/qecsimext-repo-0.1b7.zip
+.. _qecsimext-0.1b8.zip: https://github.com/qecsim/qecsimext/archive/0.1b8.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-repo-0.1b7.zip        # extract repo (Windows: tar -xf qecsimext-repo-0.1b7.zip)
-    $ cd qecsimext
+    $ unzip qecsimext-0.1b8.zip             # extract repo (Windows: tar -xf qecsimext-0.1b8.zip)
+    $ cd qecsimext-0.1b8
     $ python3 --version                     # qecsimext requires Python 3.5+
     Python 3.7.8
     $ python3 -m venv venv                  # create virtual environment
@@ -77,7 +76,6 @@ instead of downloading it.)
     ...
     [{"code": "3-qubit", "decoder": "3-qubit lookup", "error_model": "3-qubit bit-flip", "error_probability": 0.3, "logical_failure_rate": 0.22, ..., "wall_time": 0.03045584499999965}]
 
-|
 
 New components
 --------------
@@ -87,7 +85,6 @@ interface as described below. See also the `qecsim documentation`_.
 
 .. _qecsim documentation: https://davidtuckett.com/qit/qecsim/
 
-|
 
 Implementation
 ~~~~~~~~~~~~~~
@@ -98,7 +95,6 @@ extend ``qecsim.model.StabilizerCode``, ``qecsim.model.ErrorModel`` or
 ``qecsim.model.DecoderFTP``). See `<./src/qecsimext/threequbit.py>`__ for
 examples.
 
-|
 
 CLI integration
 ~~~~~~~~~~~~~~~
@@ -116,7 +112,6 @@ be provided by decorating implementation classes with
 ``qecsim.model.cli_description``. See `<./src/qecsimext/threequbit.py>`__ for
 examples.
 
-|
 
 Notes
 ~~~~~
@@ -137,7 +132,6 @@ Notes
   However, if you intend to put the components in the public domain then it
   would be good practice to use a unique repository and root package name.
 
-|
 
 Tools
 _____
@@ -156,9 +150,8 @@ For example, distributables can be built as follows:
     (venv) $ tox -ebuild                    # build qecsimext distributables
     ...
     (venv) $ ls ./dist/                     # list qecsimext distributables
-    qecsimext-0.1b7-py3-none-any.whl    qecsimext-0.1b7.tar.gz
+    qecsimext-0.1b8-py3-none-any.whl    qecsimext-0.1b8.tar.gz
 
-|
 
 License / Citing
 ----------------
@@ -168,13 +161,12 @@ qecsimext is released under the BSD 3-Clause license; see `<LICENSE>`__.
 If you use qecsim in your research, please see the `qecsim documentation`_ for
 citing details.
 
-|
 
 Links
 -----
 
-* Source code: https://bitbucket.org/qecsim/qecsimext/
-* qecsim source code: https://bitbucket.org/qecsim/qecsim/
+* Source code: https://github.com/qecsim/qecsimext
+* qecsim source code: https://github.com/qecsim/qecsim
 * qecsim documentation: https://davidtuckett.com/qit/qecsim/
 * Contact: qecsim@gmail.com
 
