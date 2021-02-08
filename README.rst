@@ -172,4 +172,4 @@ Links
 
 ----
 
-Copyright 2016, David K. Tuckett.
+Copyright 2016 - 2021, David K. Tuckett.
