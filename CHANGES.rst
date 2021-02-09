@@ -1,6 +1,13 @@
 0.1
 ---
 
+0.1b9
+~~~~~
+
+Untagged
+
+- Update for qecsim docs on GitHub.
+
 0.1b8
 ~~~~~
 

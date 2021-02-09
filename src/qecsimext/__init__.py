@@ -7,4 +7,4 @@ See the README at `qecsimext`_ for details.
 .. _qecsimext: https://github.com/qecsim/qecsimext
 """
 
-__version__ = '0.1b8'
+__version__ = '0.1b9'

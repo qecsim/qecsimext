@@ -25,16 +25,16 @@ instead of downloading it.)
 .. _clone: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
 .. _fork: https://docs.github.com/en/github/getting-started-with-github/fork-a-repo
 
-* Download the repository: `qecsimext-0.1b8.zip`_
+* Download the repository: `qecsimext-0.1b9.zip`_
 
-.. _qecsimext-0.1b8.zip: https://github.com/qecsim/qecsimext/archive/0.1b8.zip
+.. _qecsimext-0.1b9.zip: https://github.com/qecsim/qecsimext/archive/0.1b9.zip
 
 * Install qecsimext in editable mode with developer dependencies:
 
 .. code-block:: text
 
-    $ unzip qecsimext-0.1b8.zip             # extract repo (Windows: tar -xf qecsimext-0.1b8.zip)
-    $ cd qecsimext-0.1b8
+    $ unzip qecsimext-0.1b9.zip             # extract repo (Windows: tar -xf qecsimext-0.1b9.zip)
+    $ cd qecsimext-0.1b9
     $ python3 --version                     # qecsimext requires Python 3.5+
     Python 3.7.8
     $ python3 -m venv venv                  # create virtual environment
@@ -150,7 +150,7 @@ For example, distributables can be built as follows:
     (venv) $ tox -ebuild                    # build qecsimext distributables
     ...
     (venv) $ ls ./dist/                     # list qecsimext distributables
-    qecsimext-0.1b8-py3-none-any.whl    qecsimext-0.1b8.tar.gz
+    qecsimext-0.1b9-py3-none-any.whl    qecsimext-0.1b9.tar.gz
 
 
 License / Citing
