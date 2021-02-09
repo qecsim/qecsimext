@@ -83,7 +83,7 @@ New components
 New components can be implemented and integrated into the command-line
 interface as described below. See also the `qecsim documentation`_.
 
-.. _qecsim documentation: https://davidtuckett.com/qit/qecsim/
+.. _qecsim documentation: https://qecsim.github.io/
 
 
 Implementation
@@ -167,7 +167,7 @@ Links
 
 * Source code: https://github.com/qecsim/qecsimext
 * qecsim source code: https://github.com/qecsim/qecsim
-* qecsim documentation: https://davidtuckett.com/qit/qecsim/
+* qecsim documentation: https://qecsim.github.io/
 * Contact: qecsim@gmail.com
 
 ----

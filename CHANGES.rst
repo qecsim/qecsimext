@@ -6,7 +6,7 @@
 
 Untagged
 
-- Update for qecsim docs on GitHub.
+- docs: Update for qecsim docs on GitHub.
 
 0.1b8
 ~~~~~
