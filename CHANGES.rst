@@ -4,7 +4,7 @@
 0.1b9
 ~~~~~
 
-Untagged
+Tagged 2021-02-10
 
 - docs: Update for qecsim docs on GitHub.
 
